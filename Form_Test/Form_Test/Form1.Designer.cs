@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.テストボタン = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // テストボタン
+            // 
+            this.テストボタン.Location = new System.Drawing.Point(605, 12);
+            this.テストボタン.Name = "テストボタン";
+            this.テストボタン.Size = new System.Drawing.Size(183, 89);
+            this.テストボタン.TabIndex = 0;
+            this.テストボタン.Text = "テストボタンだお";
+            this.テストボタン.UseVisualStyleBackColor = true;
+            this.テストボタン.Click += new System.EventHandler(this.テストボタン_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.テストボタン);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button テストボタン;
     }
 }
 
