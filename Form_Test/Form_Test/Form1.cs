@@ -16,15 +16,19 @@ namespace Form_Test
         const int BUTTON_SIZE_X = 100;
         const int BUTTON_SIZE_Y = 100;
 
+        // 横に何個か
         const int BOARD_SIZE_X = 3;
+
+        // 縦に何個か
         const int BOARD_SIZE_Y = 3;
 
+        private TestButton[,] _buttonArray;
 
 
         public Form1()
         {
             InitializeComponent();
-
+            _buttonArray = new TestButton[BOARD_SIZE_Y, BOARD_SIZE_X];
 
             for (int j = 0; j < BOARD_SIZE_X ; j++)
             {
@@ -35,13 +39,16 @@ namespace Form_Test
                         new TestButton( new Point(BUTTON_SIZE_X * i, BUTTON_SIZE_Y * j),
                                         new Size(BUTTON_SIZE_X , BUTTON_SIZE_Y ), "Hello");
 
-                    
+
+                    // 配列にボタンの参照の追加
+                    _buttonArray[j, i] = testButton;
 
                     // コントロールにボタンを追加
                     Controls.Add(testButton);
                 }
             }
 
+            _buttonArray[1, 0].SetEnable(true);
         }
 
         
