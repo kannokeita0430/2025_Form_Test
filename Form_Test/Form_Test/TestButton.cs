@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Form_Test
 {
-    internal class TestButton : Button
+    public class TestButton : Button
     {
         /// <summary>
         /// on の時の色
@@ -24,7 +24,21 @@ namespace Form_Test
         /// 現在が on か off か
         /// </summary>
         public bool _enable;
-        
+
+        private Form1 _form1;
+
+        public TestButton(Form1 form1, Point position, Size size, string text)
+        {
+            // Form1の参照を保管
+            _form1 = form1;
+            Location = position;
+            Size = size;
+            Text = text;
+            Click += ClickEvent;
+
+            SetEnable(false);
+        }
+
         /// <summary>
         /// onとoffの設定
         /// </summary>
@@ -43,22 +57,13 @@ namespace Form_Test
             }
 
         }
-
-        public TestButton(Point position, Size size, string text)
-        {
-            Location = position;
-            Size = size;
-            Text = text;
-            Click += ClickEvent;
-
-            SetEnable(false);
-        }
+        
 
     // 自分で作成することも可
         private void ClickEvent(object sender, EventArgs e)
         {
-            SetEnable(!_enable);
-        }
+            _form1.GetTestButton(1, 2).SetEnable(true);
+　　    }
     }
 }
 
