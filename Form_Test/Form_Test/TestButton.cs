@@ -73,6 +73,10 @@ namespace Form_Test
 
         }
 
+        // ランダムで初めにonになってるのをつくる
+        Random random = new random(testButton[0,0]);
+
+
         public void Toggle()
         {
             SetEnable(!_enable);
