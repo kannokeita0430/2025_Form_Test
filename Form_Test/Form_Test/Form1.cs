@@ -43,16 +43,16 @@ namespace Form_Test
             InitializeComponent();
             _buttonArray = new TestButton[BOARD_SIZE_Y, BOARD_SIZE_X];
 
-            for (int j = 0; j < BOARD_SIZE_X ; j++)
+            for (int j = 0; j < BOARD_SIZE_X; j++)
             {
-                for (int i = 0; i < BOARD_SIZE_Y ; i++)
+                for (int i = 0; i < BOARD_SIZE_Y; i++)
                 {
                     // インスタンスの生成
-                    TestButton testButton = 
-                        new TestButton (
+                    TestButton testButton =
+                        new TestButton(
                         this,
-                        i,j,
-                         new Size(BUTTON_SIZE_X , BUTTON_SIZE_Y ), "Hello");
+                        i, j,
+                         new Size(BUTTON_SIZE_X, BUTTON_SIZE_Y), "Hello");
 
 
                     // 配列にボタンの参照の追加
@@ -63,9 +63,16 @@ namespace Form_Test
                 }
             }
 
-           
+            for (int n = 0; n < 5; n++ )
+            {
+                _buttonArray[n, 0] = ;
+                Random x = new Random(2);
+                Random y = new Random(2);
+                
+            }
+         
         }
-        
+
         /// <summary>
         /// TestButtonを取得する関数
         /// </summary>
@@ -85,7 +92,7 @@ namespace Form_Test
 
         private void テストボタン_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("こんにちは");
+            MessageBox.Show("たすけてーーーーー");
         }
     }
 }

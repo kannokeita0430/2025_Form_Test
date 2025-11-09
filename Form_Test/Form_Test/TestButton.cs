@@ -48,6 +48,7 @@ namespace Form_Test
             // ボタン内のテキスト
             Text = text;
 
+           Random random = new Random();
             SetEnable(false);
 
             Click += ClickEvent;
@@ -61,7 +62,7 @@ namespace Form_Test
         public void SetEnable(bool on)
         {
             _enable = on;
-
+            
             if (on)
             {
                 BackColor = _onColor;
@@ -73,8 +74,17 @@ namespace Form_Test
 
         }
 
-        // ランダムで初めにonになってるのをつくる
-        Random random = new random(testButton[0,0]);
+        //public TestButton()
+        //{
+        //    Random random = new Random();
+        //    SetEnable(true);
+        //}
+        
+
+        // ランダムで初めにonになってるのをつくる　※未完
+        
+        //Random random = new Random();
+        //int random = Random.Next();
 
 
         public void Toggle()
@@ -98,6 +108,8 @@ namespace Form_Test
             _form1.GetTestButton(_x, _y - 1)?.Toggle();
 
         }
+
+        // クリアはこの先
 
     }
 }
