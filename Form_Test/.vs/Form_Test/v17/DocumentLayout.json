@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\2025_Form_Test\\Form_Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{432DCC8A-7D60-4740-A0B4-D2E8DEE3BFA6}|Form_Test\\Form_Test.csproj|C:\\Users\\user\\Documents\\2025_Form_Test\\Form_Test\\form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{432DCC8A-7D60-4740-A0B4-D2E8DEE3BFA6}|Form_Test\\Form_Test.csproj|solutionrelative:form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{432DCC8A-7D60-4740-A0B4-D2E8DEE3BFA6}|Form_Test\\Form_Test.csproj|c:\\users\\user\\documents\\2025_form_test\\form_test\\form_test\\testbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{432DCC8A-7D60-4740-A0B4-D2E8DEE3BFA6}|Form_Test\\Form_Test.csproj|solutionrelative:form_test\\testbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{432DCC8A-7D60-4740-A0B4-D2E8DEE3BFA6}|Form_Test\\Form_Test.csproj|C:\\Users\\user\\Documents\\2025_Form_Test\\Form_Test\\form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{432DCC8A-7D60-4740-A0B4-D2E8DEE3BFA6}|Form_Test\\Form_Test.csproj|solutionrelative:form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{432DCC8A-7D60-4740-A0B4-D2E8DEE3BFA6}|Form_Test\\Form_Test.csproj|C:\\Users\\user\\Documents\\2025_Form_Test\\Form_Test\\form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -22,30 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TestButton.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\2025_Form_Test\\Form_Test\\Form_Test\\TestButton.cs",
               "RelativeDocumentMoniker": "Form_Test\\TestButton.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\2025_Form_Test\\Form_Test\\Form_Test\\TestButton.cs*",
-              "RelativeToolTip": "Form_Test\\TestButton.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAUAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\Documents\\2025_Form_Test\\Form_Test\\Form_Test\\TestButton.cs",
+              "RelativeToolTip": "Form_Test\\TestButton.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAwFcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T05:05:50.924Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\2025_Form_Test\\Form_Test\\Form_Test\\Form1.cs",
               "RelativeDocumentMoniker": "Form_Test\\Form1.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\2025_Form_Test\\Form_Test\\Form_Test\\Form1.cs",
               "RelativeToolTip": "Form_Test\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwEMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T04:56:43.112Z",
               "EditorCaption": ""
