@@ -10,6 +10,13 @@ namespace Form_Test
 {
     public class TestButton : Button
     {
+        // aita様の助言アリ
+        // ランダム関数
+        private static Random random = new Random();
+        // 論理値を格納する変数
+        private bool Boolrand;
+
+
         /// <summary>on の時の色</summary>
         public Color _onColor = Color.Blue;
 
@@ -31,6 +38,12 @@ namespace Form_Test
 
         public TestButton(Form1 form1, int x, int y, Size size, string text)
         {
+            // aita様の助言アリ
+            // 0 or 1を返す関数を作る
+            // 0 = true , 1 = false
+            Boolrand = random.Next(0, 2) == 0;
+
+
             // Form1の参照を保管
             _form1 = form1;
 
@@ -48,8 +61,10 @@ namespace Form_Test
             // ボタン内のテキスト
             Text = text;
 
-           Random random = new Random();
-            SetEnable(false);
+            // Random random = new Random();
+            // ()の中ランダムにできるといいね
+            // aita様の助言アリ
+            SetEnable(Boolrand);
 
             Click += ClickEvent;
 
@@ -74,20 +89,13 @@ namespace Form_Test
 
         }
 
-        //public TestButton()
-        //{
-        //    Random random = new Random();
-        //    SetEnable(true);
-        //}
+        //  お試し2個目
+        // public TestButton()
+        // {
+        //     Random random = new Random();
+        //     SetEnable(true);
+        // }
         
-
-        // ランダムで初めにonになってるのをつくる　※未完
-        
-        //Random random = new Random();
-        //int random = Random.Next();
-            
-
-
         public void Toggle()
         {
             SetEnable(!_enable);
@@ -108,10 +116,39 @@ namespace Form_Test
             _form1.GetTestButton(_x, _y + 1)?.Toggle();
             _form1.GetTestButton(_x, _y - 1)?.Toggle();
 
+
+            // クリアはこの先
+
+            // aita様の助言アリ
+            // 判定の基準を保管 
+            bool nandemo =  _form1.GetTestButton(0, 0)._enable;
+            // 全部そろってるかどうか状態を頬間
+            bool hantei = true;
+            
+            for( int i = 0; i < 3 ; i++)
+            {
+                for (int j = 0; j < 3 ; j++)
+                {
+                    if (nandemo != _form1.GetTestButton(i, j)._enable)
+                    {
+                        hantei = !hantei;
+                        break;
+                    }
+            
+                }
+            
+                if (!hantei)
+                {
+                    break;
+                }
+            }
+                  
+            if (hantei)
+            {
+                MessageBox.Show("クリア");
+                Application.Exit();
+            }
         }
-
-        // クリアはこの先
-
     }
 }
 

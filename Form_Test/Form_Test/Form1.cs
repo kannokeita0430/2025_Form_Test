@@ -62,17 +62,9 @@ namespace Form_Test
                     Controls.Add(testButton);
                 }
             }
-
-            for (int n = 0; n < 5; n++ )
-            {
-                _buttonArray[n, 0] = ;
-                Random x = new Random(2);
-                Random y = new Random(2);
-                
-            }
          
         }
-
+        
         /// <summary>
         /// TestButtonを取得する関数
         /// </summary>
